@@ -1,0 +1,66 @@
+@import "./lib/reset.scss";
+
+html, body, #root, .App{
+    @include rect(100%, 100%);
+}
+.App {
+    @include flexbox();
+    @include flex-direction(column);
+    .container{
+        @include flex();
+        @include rect(100%, auto);
+        @include overflow(hidden);
+        
+        .box{
+            @include rect(100%, 100%);
+            @include flexbox();
+            @include flex-direction(column);
+            header{
+                @include rect(100%, 0.44rem);
+                @include background-color(#f66);
+            }
+            .content{
+                @include flex();
+                @include rect(100%, auto);
+                @include overflow();
+            }
+        }
+    }
+    
+    footer{
+        @include rect(100%, 0.5rem);
+        @include background-color(#eee);
+        
+        ul{
+            @include rect(100%, 100%);
+            @include flexbox();
+
+            li{
+                @include flex();
+                @include rect(auto, 100%);
+                 @include flexbox();
+                 @include align-items();
+                @include flex-direction(column);
+//               @include justify-content();
+//              a{
+//                  @include text-color(#333);
+//                  @include rect(100%, 100%);
+//                  @include flexbox();
+//                  @include flex-direction(column);
+//                  @include justify-content();
+//                  @include align-items();
+                    span{
+                        @include font-size(0.22rem);
+                    }
+                    p{
+                        @include font-size(0.12rem);
+                    }
+                    
+                    &.active{
+                        @include text-color(#f66);
+                    }
+//              }
+            }
+        }
+    }
+}
