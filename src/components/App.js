@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import { Switch, Route, Redirect, NavLink  } from 'react-router-dom';
-
 import Home from '@/components/Home';
 import Kind from '@/components/Kind';
 import Cart from '@/components/Cart';
@@ -37,7 +36,7 @@ class App extends Component {
             </li>
             <li>
              <NavLink to="/cart" activeClassName="active">
-              <span className="iconfont icon-gouwuche"></span>
+              <span className="iconfont icon-gouwuche1"></span>
               <p>购物车</p>
                </NavLink>
             </li>

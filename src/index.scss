@@ -10,25 +10,146 @@ html, body, #root, .App{
         @include flex();
         @include rect(100%, auto);
         @include overflow(hidden);
-        
         .box{
             @include rect(100%, 100%);
             @include flexbox();
             @include flex-direction(column);
             header{
-                @include rect(100%, 0.44rem);
+                @include rect(100%, 0.84rem);
                 @include background-color(#f66);
+                .top{
+                     @include rect(100%, 0.44rem);
+                    @include flexbox();
+                    li{
+                        @include flex();
+                        text-align:center;
+                        line-height: 0.44rem;
+                        color:white;
+                        font-size:0.18rem;
+                    }
+                }
+                .tab-wrap{
+                    width:100%;
+                    overflow: hidden;
+                    height:0.40rem;
+                    .tab{
+                        @include rect(10rem, 0.40rem);
+                        background:white;
+                        li{
+                            float:left;
+                            width:1.2rem;
+                            height:100%;
+                            text-align: center;
+                            line-height: 0.4rem;
+                        }
+                    }
+                }
+                
             }
             .content{
                 @include flex();
                 @include rect(100%, auto);
                 @include overflow();
+                ul{
+                    width:100%;
+                    height:auto;
+                    li{
+                        width:100%;
+                        
+                        .bofang{
+                            width:100%;
+                            height:2rem;
+                            position:relative;
+                            p{
+                                position:absolute;
+                                top:0.05rem;
+                                left:0.05rem;
+                                width:1rem;
+                                height:0.5rem;
+                                img{
+                                    width:0.25rem;
+                                     height:0.25rem;
+                                     border-radius: 50%;
+                                     margin-right:0.05rem;
+                                }
+                            }
+                            .fenlei{
+                                position:absolute;
+                                top:0.05rem;
+                                right:0.08rem;
+                                
+                                padding:0 0.1rem;
+                                border-radius:0.14rem;
+                                opacity:0.1;
+                                color:white;
+                                background:black;
+                                border:0.01rem solid #ccc;
+                                font-size:0.12rem;
+                            }
+                            .xiaoliang{
+                                position:absolute;
+                                bottom:0.05rem;
+                                left:0.08rem;
+                            }
+                        }
+                        .jieshao{
+                            width:100%;
+                            ul{
+                                display:flex;
+                                height:0.5rem;
+                                padding:0 0.1rem;
+                                li{
+                                    height:100%;
+                                    padding-top:0.05rem;
+                                    .iconfont{
+                                        font-size:0.2rem;
+                                    }
+                                }
+                                li:nth-child(1){
+                                    width:55%;
+                                  
+                                    
+                                }
+                                li:nth-child(2){
+                                    width:15%;
+                                  
+                                    text-align: center;
+                                    span{
+                                        float:left;
+                                        width:100%;
+                                        height:50%;
+                                        
+                                    }
+                                }
+                                li:nth-child(3){
+                                    width:15%;
+                                  
+                                    text-align: center;
+                                    
+                                    span{
+                                        float:left;
+                                        width:100%;
+                                        height:50%;
+                                        
+                                    }
+                                    
+                                }
+                                 li:nth-child(4){
+                                    width:15%;
+                                   
+                                    text-align: center;
+                                    font-size:0.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
     
     footer{
-        @include rect(100%, 0.5rem);
+        @include rect(100%, 0.4rem);
         @include background-color(#eee);
         
         ul{
@@ -41,14 +162,6 @@ html, body, #root, .App{
                  @include flexbox();
                  @include align-items();
                 @include flex-direction(column);
-//               @include justify-content();
-//              a{
-//                  @include text-color(#333);
-//                  @include rect(100%, 100%);
-//                  @include flexbox();
-//                  @include flex-direction(column);
-//                  @include justify-content();
-//                  @include align-items();
                     span{
                         @include font-size(0.22rem);
                     }
@@ -59,8 +172,9 @@ html, body, #root, .App{
                     &.active{
                         @include text-color(#f66);
                     }
-//              }
             }
         }
     }
 }
+
+
