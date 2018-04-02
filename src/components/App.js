@@ -5,6 +5,7 @@ import Home from '@/components/Home';
 import Kind from '@/components/Kind';
 import Cart from '@/components/Cart';
 import User from '@/components/User';
+import Search from '@/components/Search';
 
 class App extends Component {
  
@@ -17,6 +18,7 @@ class App extends Component {
             <Route path = "/kind" component = { Kind } />
             <Route path = "/cart" component = { Cart } />
             <Route path = "/user" component = { User } />
+            <Route path = "/search" component = { Search } />
             <Redirect to = {{pathname: "/home"}}  />
           </Switch>
         </div>

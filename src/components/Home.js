@@ -33,7 +33,7 @@ class Model extends Component {
     render() {
     
     return (
-      <div className="box">
+      <div className="box ">
         <header>
 	        <ul className="top">
 	        	<li className='iconfont icon-tubiao113'></li>
@@ -43,7 +43,7 @@ class Model extends Component {
 	        	<li className='iconfont icon-magnifier'></li>
 	        </ul>
         </header>
-        <div className = "content">
+        <div className = "content home_box">
             <Tabs
                 tabs={this.state.tabs}
                 initialPage={0}>
