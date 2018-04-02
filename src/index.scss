@@ -15,7 +15,7 @@ html, body, #root, .App{
             @include flexbox();
             @include flex-direction(column);
             header{
-                @include rect(100%, 0.84rem);
+                @include rect(100%, 0.44rem);
                 @include background-color(#f66);
                 .top{
                      @include rect(100%, 0.44rem);
@@ -28,38 +28,37 @@ html, body, #root, .App{
                         font-size:0.18rem;
                     }
                 }
-                .tab-wrap{
-                    width:100%;
-                    overflow: hidden;
-                    height:0.40rem;
-                    .tab{
-                        @include rect(10rem, 0.40rem);
-                        background:white;
-                        li{
-                            float:left;
-                            width:1.2rem;
-                            height:100%;
-                            text-align: center;
-                            line-height: 0.4rem;
-                        }
-                    }
-                }
+                //.tab-wrap{
+                //    width:100%;
+                //    overflow: hidden;
+                //    height:0.40rem;
+                //    .tab{
+                //        @include rect(10rem, 0.40rem);
+                //        background:white;
+                //        li{
+                //            float:left;
+                //            width:1.2rem;
+                //            height:100%;
+                //            text-align: center;
+                //            line-height: 0.4rem;
+                //        }
+                //    }
+                //}
                 
             }
             .content{
                 @include flex();
                 @include rect(100%, auto);
                 @include overflow();
-                ul{
-                    width:100%;
-                    height:auto;
-                    li{
+
+                    .am-tabs-pane-wrap-active{
                         width:100%;
-                        
+                        background:white;
                         .bofang{
                             width:100%;
                             height:2rem;
                             position:relative;
+
                             p{
                                 position:absolute;
                                 top:0.05rem;
@@ -90,6 +89,21 @@ html, body, #root, .App{
                                 position:absolute;
                                 bottom:0.05rem;
                                 left:0.08rem;
+                            }
+                            .shijian{
+                                position:absolute;
+                                bottom:0.05rem;
+                                right:0.08rem;
+                            }
+                            .start{
+                                position:absolute;
+
+                                font-size: 0.3rem;
+
+                                margin-top: 0.7rem;
+                                margin-left: 48%;
+
+
                             }
                         }
                         .jieshao{
@@ -143,7 +157,7 @@ html, body, #root, .App{
                             }
                         }
                     }
-                }
+
             }
         }
     }
