@@ -43,7 +43,7 @@ class Model extends Component {
 
                     <div style={{  height: '2.5rem', backgroundColor: '#fff' }}>
                         <div className="bofang">
-                            <p><img src={item.picUrl}/><span>item.name</span></p>
+                            <p><img src={item.picUrl}/><span>item.name </span></p>
                             <span className="fenlei">电影</span>
                             <span className="xiaoliang iconfont icon-bofang">67万</span>
                             <span className="shijian iconfont icon-youyinpin">03:29</span>
