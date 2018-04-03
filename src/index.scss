@@ -6,6 +6,23 @@ html, body, #root, .App{
 .App {
     @include flexbox();
     @include flex-direction(column);
+    header{
+        @include rect(100%, 0.44rem);
+        background:rgba(211,58,49,1);
+        .top{
+            @include rect(100%, 0.44rem);
+            @include flexbox();
+            a{
+                display: block;
+                @include flex();
+                line-height: 0.44rem;
+                color:white;
+                font-size:0.18rem;
+                text-align: center;
+            }
+
+        }
+    }
     .container{
         @include flex();
         @include rect(100%, auto);
@@ -14,38 +31,7 @@ html, body, #root, .App{
             @include rect(100%, 100%);
             @include flexbox();
             @include flex-direction(column);
-            header{
-                @include rect(100%, 0.44rem);
-                @include background-color(#f66);
-                .top{
-                     @include rect(100%, 0.44rem);
-                    @include flexbox();
-                    li{
-                        @include flex();
-                        text-align:center;
-                        line-height: 0.44rem;
-                        color:white;
-                        font-size:0.18rem;
-                    }
-                }
-                //.tab-wrap{
-                //    width:100%;
-                //    overflow: hidden;
-                //    height:0.40rem;
-                //    .tab{
-                //        @include rect(10rem, 0.40rem);
-                //        background:white;
-                //        li{
-                //            float:left;
-                //            width:1.2rem;
-                //            height:100%;
-                //            text-align: center;
-                //            line-height: 0.4rem;
-                //        }
-                //    }
-                //}
-                
-            }
+
 
 
                 .home_box{

@@ -10,8 +10,7 @@ class Model extends Component {
     
     return (
      <div className="box">
-        <header>
-        </header>
+
         <div className = "content">
           购物车
         </div>

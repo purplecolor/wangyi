@@ -21,15 +21,6 @@ class Model extends Component {
     return (
       <div className="box user_box">
 
-          <header>
-              <ul className="top">
-                  <li className='iconfont icon-tubiao113'></li>
-                  <li className='iconfont icon-bofangshu'></li>
-                  <li className='iconfont icon-yinyue'></li>
-                  <li className='iconfont icon-GroupCopy'></li>
-                  <li className='iconfont icon-magnifier'></li>
-              </ul>
-          </header>
         <div className = "content">
             <p className="title">精彩别错过<span className="iconfont icon-gengduojiantou"></span></p>
             <Tabs tabs={this.state.tabs}

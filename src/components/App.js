@@ -8,10 +8,32 @@ import User from '@/components/User';
 import Search from '@/components/Search';
 
 class App extends Component {
- 
+    /*go_user(){
+        this.props.history.push('./user')
+    }*/
   render() {
     return (
       <div className="App">
+          <header>
+              <ul className="top">
+
+                  <NavLink to="/home" className='iconfont icon-tubiao113'>
+                      {/*<li className='iconfont icon-tubiao113'>   </li>*/}
+                  </NavLink>
+                  <NavLink to="/kind" className='iconfont icon-bofangshu'>
+
+                  </NavLink>
+                  <NavLink to="/cart" className='iconfont icon-yinyue'>
+
+                  </NavLink>
+                  <NavLink to="/user" className='iconfont icon-GroupCopy'>
+
+                  </NavLink>
+                  <NavLink to="/search" className='iconfont icon-magnifier'>
+
+                  </NavLink>
+              </ul>
+          </header>
         <div className = "container">
           <Switch>
             <Route path = "/home" component = { Home } />
@@ -53,6 +75,9 @@ class App extends Component {
       </div>
     );
   }
+    componentDidMount(){
+
+    }
 }
 
 export default App;

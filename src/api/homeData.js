@@ -1,9 +1,9 @@
 import myajax from "@/tool/myajax.js";
 
 export default {
-  goodsList(cb){
+  goodMv(cb){
     const config = {
-      url: "http://localhost:3000/api/weiyirexiao",
+      url: "http://localhost:3000/personalized/mv",
       options:{},
       success:(data) => {
         cb(data)
