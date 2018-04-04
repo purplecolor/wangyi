@@ -39,62 +39,42 @@ class Model extends Component {
             <Tabs
                 tabs={this.state.tabs}
                 initialPage={0}>
-                this.state.goodmv.map((item,index)=>{
+                {
+                    this.state.tabs.map((item,index)=>{
+                            return(
+                                <div style={{  height: '2.5rem', backgroundColor: '#fff' }} key={index}>
+                                    {this.state.goodmv.map((item,index)=>{
 
-                    <div style={{  height: '2.5rem', backgroundColor: '#fff' }}>
-                        <div className="bofang">
-                            <p><img src={item.picUrl}/><span>item.name </span></p>
-                            <span className="fenlei">电影</span>
-                            <span className="xiaoliang iconfont icon-bofang">67万</span>
-                            <span className="shijian iconfont icon-youyinpin">03:29</span>
-                            <span className="start iconfont icon-bofang"></span>
-                        </div>
-                        <div className="jieshao">
-                            <ul>
-                                <li>假面骑士Decade:不想当王</li>
-                                <li><span className="iconfont icon-dianzan"></span><span>50</span></li>
-                                <li><span className="iconfont icon-xiaoxi"></span><span>25</span></li>
-                                <li className="iconfont icon-gengduoxiao"></li>
-                            </ul>
-                        </div>
-                    </div>
+                                   return(
+                                       <div>
+                                        <div className="bofang">
+                                            <p><img style={{height:'0.3rem',width:'0.3rem'}} src={item.picUrl}/><span>{item.name} </span></p>
+                                            <span className="fenlei">电影</span>
+                                            <span className="xiaoliang iconfont icon-bofang">{item.playCount}</span>
+                                            <span className="shijian iconfont icon-youyinpin">{item.playCount}</span>
+                                            <span className="start iconfont icon-bofang"></span>
+                                            <img src={item.picUrl} alt="" style={{width:"100%",height:"2rem"}}/>
+                                        </div>
+                                         <div className="jieshao">
+                                             <ul>
+                                             <li>{item.copywriter}</li>
+                                         <li><span><span className="iconfont icon-dianzan"></span>50</span></li>
+                                             <li><span><span className="iconfont icon-xiaoxi"></span>25</span></li>
+                                             <li className="iconfont icon-gengduoxiao"></li>
+                                             </ul>
+                                         </div>
+                                       </div>
+                                    )
+                                })}
+
+                                </div>
+                            )
+
+                    })
                 }
 
 
-                <div>
-                    <div className="bofang">
-                        <p><img src="./favicon.ico"/><span>贾晓楠</span></p>
-                        <span className="fenlei">电影</span>
-                        <span className="xiaoliang iconfont icon-bofang">67万</span>
-                        <span className="shijian iconfont icon-youyinpin">03:29</span>
-                        <span className="start iconfont icon-bofang"></span>
-                    </div>
-                    <div className="jieshao">
-                        <ul>
-                            <li>假面骑士Decade:不想当王</li>
-                            <li><span className="iconfont icon-dianzan"></span><span>50</span></li>
-                            <li><span className="iconfont icon-xiaoxi"></span><span>25</span></li>
-                            <li className="iconfont icon-gengduoxiao"></li>
-                        </ul>
-                    </div>
-                </div>
-                <div >
-                    <div className="bofang">
-                        <p><img src="./favicon.ico"/><span>贾晓楠</span></p>
-                        <span className="fenlei">电影</span>
-                        <span className="xiaoliang iconfont icon-bofang">67万</span>
-                        <span className="shijian iconfont icon-youyinpin">03:29</span>
-                        <span className="start iconfont icon-bofang"></span>
-                    </div>
-                    <div className="jieshao">
-                        <ul>
-                            <li>假面骑士Decade:不想当王</li>
-                            <li><span className="iconfont icon-dianzan"></span><span>50</span></li>
-                            <li><span className="iconfont icon-xiaoxi"></span><span>25</span></li>
-                            <li className="iconfont icon-gengduoxiao"></li>
-                        </ul>
-                    </div>
-                </div>
+
             </Tabs>
         </div>
       </div>
