@@ -95,6 +95,12 @@ html, body, #root, .App{
 
 
                             }
+                            video{
+                                width:100%;
+                                height:2rem;
+                                margin:0;
+                                padding:0;
+                            }
                         }
                         .jieshao{
                             width:100%;
@@ -183,4 +189,9 @@ html, body, #root, .App{
     }
 }
 
-
+.icon-xuanze-duoxuan{
+   display:none;
+}
+.icon-xuanze-moren{
+   display:block;
+}
