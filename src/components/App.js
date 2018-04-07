@@ -41,36 +41,11 @@ class App extends Component {
             <Route path = "/cart" component = { Cart } />
             <Route path = "/user" component = { User } />
             <Route path = "/search" component = { Search } />
-            <Redirect to = {{pathname: "/home"}}  />
+            <Redirect to = {{pathname:"/home"}}  />
           </Switch>
         </div>
         <footer>
-          <ul>
-            <li>
-              <NavLink to="/home" activeClassName="active">
-                <span className="iconfont icon-home"></span>
-                <p>首页</p>
-              </NavLink>
-            </li>
-            <li>
-               <NavLink to="/kind" activeClassName="active">
-              <span className="iconfont icon-fenlei"></span>
-              <p>分类</p>
-               </NavLink>
-            </li>
-            <li>
-             <NavLink to="/cart" activeClassName="active">
-              <span className="iconfont icon-gouwuche1"></span>
-              <p>购物车</p>
-               </NavLink>
-            </li>
-            <li>
-             <NavLink to="/user" activeClassName="active">
-              <span className="iconfont icon-wode"></span>
-              <p>我的</p>
-               </NavLink>
-            </li>
-          </ul>
+            <audio></audio>
         </footer>
       </div>
     );
